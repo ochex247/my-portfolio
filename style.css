@@ -25,6 +25,27 @@
     background-color: var(--primary-color);
     
 }
+.prof{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.span{
+    color: var(--primary-color);
+    font-size: var(--font-size);
+    padding-inline: 10px;
+}
+.span:hover{
+   border: 2px dotted var(--primary-color);
+   transform: rotateY(5deg);
+   cursor: pointer;
+   
+}
+.diped{
+    display: none;
+}
+.drop1{
+    display: none;
+}
 
 .sicons{
     color:var(--primary-color);
@@ -55,6 +76,9 @@ color: var(--primary-color)
     width: 100vw;
     /* border: 2px solid red; */
     /* background-color: black */
+    background-image: url("./images/oche4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .yoi{
@@ -141,7 +165,7 @@ color: var(--primary-color)
     100%{transform: scale(1.2);}
 }
 .about{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* height: 500px; */
     background-color: var(--background-color);
 }
@@ -293,6 +317,7 @@ color: var(--primary-color)
     font-size: var(--font-size);
     transition: all .45s ease;
     
+    
 }
 .mssg:hover{
     background-color: transparent;
@@ -301,8 +326,8 @@ color: var(--primary-color)
 }
 .mappy1{
     height: 500px;
-    width: 100vw;
-    border: 2px solid red;
+    width: 100%;
+    /* border: 2px solid red; */
 }
 .mappy1 iframe{
     height: 100%;
@@ -316,8 +341,12 @@ color: var(--primary-color)
 
 /* //////////////////////// MEDIA QUERIES ////////////////////////////// */
 @media screen and ( max-width: 800px){
+    .diped{
+        display: none;
+    }
     .myname{
         font-size: var(--font-size-2);
+        padding-top: 10px;
     }
     .sicons {
         font-size: var(--font-size-2);
@@ -334,9 +363,103 @@ color: var(--primary-color)
     .det {
        font-size: 2rem;
     }
+    .color {
+       font-size: 1.2rem;
+       padding: 18px;
+    
+    }
+    .prg2 {
+       font-size: 1.2rem;
+       line-height: 1.4;
+    }
+    .about{
+       padding-bottom: 50px;
+    }
+    .card-title{
+        font-size: 1.1rem;
+    }
+    .card-text{
+       font-size: 0.9rem;
+    }
+    .caty{
+        padding-top: 50px;
+        font-size: 1.5rem;
+    }
+    .cont1{
+        font-size: 1.5rem;
+        padding-top: 50px !important;
+    }
+    .numemail {
+        font-size: 1.29rem;
+    }
+    .container3{
+        margin-top: 50px;
+    }
+    .mssg{
+        font-size: 1.5rem;
+    }
+
+
 }
+
+/* ////////////////////// MEDIA QUERY FOR MOBILE DEVICE //////////////////////////////// */
+    @media screen and (max-width: 500px){
+            
+        .profcum{
+            width: 60% !important;
+            display: none !important;
+
+        }
+        .myname {
+            padding-top: 0px;
+            font-size: 1.5rem;
+        }
+        .ochecumc{
+            opacity: 0;
+            visibility: hidden;
+            display: none;
+        }
+
+        .drop1{
+            /* margin-left: 140px; */
+            display: block;
+            margin-right: 15px;
+        }
+        .diped{
+            display: block;
+        }
+        .d-none{
+            display: block !important;
+        }
+        .bttn{
+            background-color: var(--primary-color);
+            color:var(--font-color)
+        }
+        .prg1 {
+            font-size: 1.5rem;
     
+        }
+        .body {
+            height: auto;
     
+        }
+        .aboutcontent {
+            grid-template-columns:1fr;
+   
+        }
+        .about-right {
+            padding-left: 20px;
+        }
+        .left {
+            height: auto;
+    
+        }
+        .right{
+            width: 90%;
+            margin-inline: 5%;
+        }
+        
 
-
-
+}
+        
+    
